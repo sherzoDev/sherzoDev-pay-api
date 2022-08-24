@@ -1,0 +1,253 @@
+/* Site Header Start */
+
+html {
+    overflow-x: hidden;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+    text-align: center;
+}
+
+.hero__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__input {
+    padding-top: 16px;
+    width: 280px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+}
+
+.hero__input::placeholder {
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    opacity: 0.5;
+}
+
+.hero__btn {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    width: 280px;
+    color: #fff;
+    background: #BA4270;
+    border-radius: 24px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.hero__text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+    text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+
+    .hero__input {
+        margin-bottom: 16px;
+    }
+
+    .hero__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) {
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__bg-img {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+
+    .hero__right {
+        padding: 0 70px;
+    }
+
+    .hero__title {
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+        color: #36536B;
+    }
+
+    .hero__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero__input {
+        width: 400px;
+    }
+
+    .hero__btn {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+
+    .hero__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 97px;
+    }
+
+    .hero__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .hero__title {
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+        color: #36536B;
+    }
+
+    .hero__btn {
+        padding-left: 26.5px;
+        padding-right: 24.5px;
+        margin-left: -50px;
+    }
+
+    .hero__input {
+        width: 445px;
+        padding-right: 70px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .hero__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .hero__right {
+        padding-left: 100px;
+    }
+
+    .hero__title {
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        width: 540px;
+        font-size: 65px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: #36536B;
+        text-align: left;
+    }
+
+    .hero__bg-img {
+        width: 503px;
+        height: 800px;
+        margin-right: -100px;
+    }
+
+    .hero__form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 0;
+        margin-left: -70px;
+    }
+
+    .hero__btn {
+        width: 173px;
+        font-weight: 700;
+        margin-left: -100px;
+        border: 2px solid transparent;
+    }
+
+    .hero__input {
+        width: 400px;
+        padding-right: 120px;
+    }
+
+    .hero__text {
+        text-align: left;
+        margin-left: -260px;
+    }
+
+}
+
+@media only screen and (min-width: 1160px) {
+
+    .hero__right {
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero__title {
+        font-size: 72px;
+    }
+
+}
+
+/* Site Header Finish */

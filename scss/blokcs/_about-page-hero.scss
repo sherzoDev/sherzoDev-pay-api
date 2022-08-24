@@ -1,0 +1,154 @@
+.about-hero {
+    padding-bottom: 328px;
+    background-image: url("../images/person-mobile.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(100%);
+}
+
+.about-hero__inner {
+    min-width: 327px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-hero__title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.about-hero__list {
+    @include list-none;  
+}
+
+.about-hero__title2 {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.about-hero__text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+@include mobile-first(500px) {
+    .about-hero {
+        background-size: 500px 300px;
+    }
+}
+
+@include mobile-first(600px) {
+    .about-hero {
+        background-size: 600px 300px;
+    }
+}
+
+@include mobile-first(600px) {
+    .about-hero {
+        background-image: url("../images/person-tablet.png");
+        background-size: 700px 267px;
+    }
+    
+    .about-hero__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+    }
+    
+    .about-hero__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .about-hero__title2 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: left;
+        letter-spacing: -0.246154px;
+    }
+    
+    .about-hero__text {
+        width: 450px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+@include mobile-first(800px) {
+    .about-hero {
+        background-size: 850px 267px;
+    }
+    
+    .about-hero__text {
+        width: 500px;
+    }
+}
+
+@include mobile-first(900px) {
+    .about-hero {
+        background-size: 950px 267px;
+    }
+    
+    .about-hero__item {
+        justify-content: center;
+    }
+    
+    .about-hero__title2 {
+        margin-right: 50px;
+    }
+}
+
+@include mobile-first(900px) {
+    .about-hero {
+        background-size: 1050px 267px;
+    }
+}
+
+@include mobile-first(1024px) {
+    .about-hero {
+        background-image: url("../images/person-desktop.png");
+        background-position: calc(50%) calc(100%);
+        background-size: 1440px 500px;
+        background-repeat: no-repeat;
+        padding-bottom: 500px;
+    }
+    
+    .about-hero__title {
+        width: 730px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        margin-bottom: 51px;
+    }
+    
+    .about-hero__title2 {
+        margin-right: 100px;
+    }
+    
+    .about-hero__text {
+        width: 635px;
+    }
+}

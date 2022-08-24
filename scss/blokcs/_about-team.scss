@@ -1,0 +1,248 @@
+.about-team {
+    padding: 48px 0;
+}
+
+.about-team__box {
+    &::before {
+        content: "";
+        display: block;
+        width: 327px;
+        height: 1px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        background-color: #36536B;
+        opacity: 0.25;
+    }
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 327px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #36536B;
+        opacity: 0.25;
+        margin-top: 16px;
+        margin-bottom: 48px;
+    }
+}
+
+.about-team__list {
+    @include list-none;
+    text-align: center;
+}
+
+.about-team__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.about-team__text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #36536B;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.about-team__span {
+    display: inline-block;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.430769px;
+    color: #BA4270;
+}
+
+.about-culture {
+    @include list-none;
+    text-align: center;
+}
+
+.about-culture__item:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.about-culture__title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.about-culture__text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+    margin: 0;
+}
+
+@include mobile-first(500px) {
+    .about-team__box  {
+        
+        &::before {
+            width: 427px;
+        }
+        
+        &::after {
+            width: 427px;
+        }
+    }
+}
+
+@include mobile-first(600px) {
+    .about-team__box  {
+        
+        &::before {
+            width: 527px;
+            margin-bottom: 30px;
+        }
+        
+        &::after {
+            width: 527px;
+            margin-top: 30px;
+        }
+    }
+    
+    .about-team__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .about-team__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@include mobile-first(600px) {
+    .about-team__box  {
+        
+        &::before {
+            display: none;
+        }
+        
+        &::after {
+            display: none;
+        }
+    }
+    
+    .about-team__list {
+        justify-content: space-around;
+    }
+    
+    
+    .about-team__item {
+        
+        &::before {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            background-color: #36536B;
+            opacity: 0.25;
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: #36536B;
+            opacity: 0.25;
+            margin-top: 16px;
+            margin-bottom: 48px;
+        }
+    }
+    
+    .about-team__text {
+        display: none;
+    }
+    
+    .about-culture__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0;
+    }
+    
+    .about-culture__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.246154px;
+    }
+    
+    .about-culture__text {
+        width: 450px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+@include mobile-first(600px) {
+    .about-culture__text {
+        width: 500px;
+    }
+}
+
+@include mobile-first(900px) {
+    .about-culture__item {
+        justify-content: center;
+    }
+
+    .about-culture__text {
+        margin-left: 50px;
+    }
+}
+
+@include mobile-first(1024px) {
+    .about-team__text {
+        display: block;
+    }
+
+    .about-team__item {
+        
+        &::before {
+            content: "";
+            display: block;
+            width: 350px;
+            height: 1px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            background-color: #36536B;
+            opacity: 0.25;
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 350px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: #36536B;
+            opacity: 0.25;
+            margin-top: 16px;
+            margin-bottom: 48px;
+        }
+    }
+
+    .about-culture__text {
+        width: 635px;
+        margin-left: 100px;
+    }
+}
